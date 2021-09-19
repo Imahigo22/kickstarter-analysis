@@ -1,0 +1,38 @@
+# Kickstarting with Excel
+
+## Overview of Project & Purpose
+	Louise has a play that reached its fundraising goal.  We're trying to figure out when she should launch the play.  And we're also using the data to predict how successful her play will be based on how similar plays fared.  We'll analyze this data and then draw some conclusions about this.
+
+## Analysis and Challenges
+	
+### Analysis of Outcomes Based on Launch Date
+	So, we were to do a line chart on the outcomes based on the dates.  And I made it based on months.  So, what I ended up doing was I converted the dates into the MM/DD/YYYY format.  Then I made a new column called, "Year" buy using the year() function in Excel.  Then I made pivot table and put the dates in the row, and put the results in the column, using the "successful", "failed", and "canceled".  
+
+So then, I made the line graph and made the x-axis the months, and the y-axis the number of outcomes.  So we got a line chart that measures the time and progression of the outcomes.  So one could easilly see which season is the best season for releasing plays.  And according to the graph, it looks like the holiday season is the worst season for plays, and late spring-early summer is the best time for plays.
+
+### Analysis of Outcomes Based on Goals
+	So then, we decided to look at the outcomes based on the goals.  That one was a little bit difficult as I had to use the COUNTIFS() function and tried to get the correct cells and the correct numbers.  I managed to get the correct filters.  I filterd by the numerical values, the "successful"/"failed"/"canceled" in the results column, respectively.  It took me awhile to get it done, and finally once I got the correct numbers, I then make the total formula based on the rows.  And I did the percentage ratios as well.  Once I got the worksheet done, I made the line chart, and had the percentages on the y-axis and the kickstarter goals on the x-axis.  The line chart is the percentages of successes and fails based on the kickstarter goals.  That would give one a good idea of how well plays get funded based on kickstarter goals.
+
+### Challenges and Difficulties Encountered
+	The first one, the outcomes based on launch date, didn't have too much difficulty replicating.  I was able to get it set up, but the outcomes based on goals was very difficult.  First, I couldn't figure out why I kept getting zeroes.  Then I found out that I had the wrong column.  Then I realized that I had the wrong filters. Finally, I discovered several typos.
+
+Once I got it set up, then I tried to figure out how to make the line graph.  Eventually, I figured out that I just had to select the whole worksheet.  Then I finally got the line graph.  Personally, I feel like I might have had an easier time if I made it a pivot table instead of making a whole new worksheet.  That way, I can easily filter results from the table instead of making a long line of code with the COUNTIFS() function.  I had to look up how to use that function properly, and I ended up copy-pasting the code in notepad before putting it in my excel worksheet.
+
+Eventually, I made the graph and had shocking results and was able to make some conclusions.  Seems like the more money people ask, the less successful the play is.  Which I don't think it has to do with money, but rather... seems like there's a higher sample of the kickstarters, the more fails you get.  It's kind of like how at my job, we get a lot of cars that break down at the station I manage compared to the other station that I worked at.  It was because we had a lot more cars, the higher chance we get of cars that break down. 
+
+## Results
+
+- What are two conclusions you can draw about the Outcomes based on Launch Date?
+	The main conclusion that I have noticed is that May is the time to launch the project.  According to the graph, there's a huge spike from April to May on all the successful, failed, and canceled projects.  The number dramatically jumps from 71 to 111.  Then the numbers drop from here on out until October.  
+
+Another conclusion is during the holiday season, there is a massive decline in theater outcomes.  Possibly due to people spending more time with their families and Christmas shopping.  So if one were to launch a play, they would have to do it in April-May.  
+
+
+- What can you conclude about the Outcomes based on Goals?
+	I conclude that plays that have the pledged goal of less than $5000 tend to be more successful than the plays who were  over that amount.  However the $30000 goal also seemed to have just as much success as well.
+
+- What are some limitations of this dataset?
+	It doesn't give us which generes are the ones that do well.  It also doesn't tell us what exactly makes the plays successful, and how exactly our client should approach this.
+
+- What are some other possible tables and/or graphs that we could create?
+	We could use a bar graph for the Outcomes based on Launch Date.  Since it will help us visually see the best time to launch a new play funded by kickstarter.  We could also use a histogram as well for the launch date.  
